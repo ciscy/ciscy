@@ -18,5 +18,7 @@ typedef struct
 	double* bias_output;
 } neural_t;
 
-int neural_init(neural_t *neural, int input_size, int hidden_size, int output_size);
+void neural_init(neural_t *neural, int input_size, int hidden_size, int output_size);
 void neural_free(neural_t* neural);
+void neural_feedforward(neural_t *neural, double* input, double* output);
+void neural_train(neural_t* neural, double* input, double* target, double learning_rate);

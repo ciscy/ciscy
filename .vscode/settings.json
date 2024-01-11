@@ -10,6 +10,7 @@
 
 	"editor.renderControlCharacters": true,
 	"files.associations": {
-		"stdlib.h": "c"
+		"stdlib.h": "c",
+		"neural.h": "c"
 	}
 }
