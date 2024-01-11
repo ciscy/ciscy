@@ -8,5 +8,8 @@
 	"editor.tabSize": 4,
 	"editor.renderWhitespace": "all",
 
-	"editor.renderControlCharacters": true
+	"editor.renderControlCharacters": true,
+	"files.associations": {
+		"stdlib.h": "c"
+	}
 }

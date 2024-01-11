@@ -6,3 +6,17 @@ static inline double sigmoid(double value)
 {
 	return 1.0 / (1.0 + exp(-value));
 }
+
+typedef struct
+{
+	int input_size;
+	int hidden_size;
+	int output_size;
+	double** weights_input_hidden;
+	double** weights_hidden_output;
+	double* bias_hidden;
+	double* bias_output;
+} neural_t;
+
+int neural_init(neural_t *neural, int input_size, int hidden_size, int output_size);
+void neural_free(neural_t* neural);
